@@ -76,11 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-marquee-left {
-  animation: marquee-left 20s linear infinite;
+  animation: marquee-left 80s linear infinite;
 }
 
 .animate-marquee-right {
-  animation: marquee-right 25s linear infinite;
+  animation: marquee-right 100s linear infinite;
 }
 
 .animate-fade-in-up {
