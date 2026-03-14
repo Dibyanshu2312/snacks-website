@@ -1,3 +1,5 @@
+import heroImage from '../assets/Prod_images/Khakhra.jpg';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gold pt-32 pb-20 overflow-hidden grain-overlay flex items-center">
@@ -28,10 +30,9 @@ export default function Hero() {
         <div className="lg:col-span-5 relative h-[500px] md:h-[600px] flex justify-center items-center opacity-0 animate-fade-in-up delay-300">
           <div className="relative z-10 w-full max-w-md">
             <img 
-              src="https://picsum.photos/seed/indian-snack/800/1000" 
+              src={heroImage} 
               alt="Snack Box" 
               className="w-full h-auto object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
-              referrerPolicy="no-referrer"
             />
           </div>
 

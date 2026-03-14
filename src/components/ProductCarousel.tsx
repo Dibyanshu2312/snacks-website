@@ -1,6 +1,12 @@
 import { ShoppingBag, ChevronRight, ChevronLeft } from 'lucide-react';
 import { useRef, useEffect } from 'react';
 
+import masalaKhakhraImg from '../assets/Prod_images/masala-khakhra.jpg';
+import methiKhakhraImg from '../assets/Prod_images/methi-khakhra.jpg';
+import gondLaddooImg from '../assets/Prod_images/gond-laddoo.webp';
+import uradGondLaddooImg from '../assets/Prod_images/urad-gond-laddoo.jpg';
+import khakhraImg from '../assets/Prod_images/Khakhra.jpg';
+
 const products = [
   {
     id: 1,
@@ -8,7 +14,7 @@ const products = [
     description: "The Crunch That Started It All. Handrolled and perfectly spiced.",
     price: "249",
     variant: "Pack of 3",
-    image: "https://picsum.photos/seed/masala-khakra/600/600",
+    image: masalaKhakhraImg,
   },
   {
     id: 2,
@@ -16,7 +22,7 @@ const products = [
     description: "Herb-Loaded. Zero Guilt. Made with fresh methi leaves.",
     price: "249",
     variant: "Pack of 3",
-    image: "https://picsum.photos/seed/methi-khakra/600/600",
+    image: methiKhakhraImg,
   },
   {
     id: 3,
@@ -24,7 +30,7 @@ const products = [
     description: "Sweet the Way Grandma Made It. Pure ghee and roasted besan.",
     price: "349",
     variant: "Box of 6",
-    image: "https://picsum.photos/seed/celebration-laddu/600/600",
+    image: gondLaddooImg,
   },
   {
     id: 4,
@@ -32,7 +38,7 @@ const products = [
     description: "Rich, nutty, and naturally sweet. Packed with premium dry fruits.",
     price: "449",
     variant: "Box of 6",
-    image: "https://picsum.photos/seed/dry-fruit-laddu/600/600",
+    image: uradGondLaddooImg,
   },
   {
     id: 5,
@@ -40,7 +46,7 @@ const products = [
     description: "Classic roasted cumin flavor. Light, crispy, and perfect for tea time.",
     price: "249",
     variant: "Pack of 3",
-    image: "https://picsum.photos/seed/jeera-khakra/600/600",
+    image: khakhraImg,
   }
 ];
 
@@ -113,7 +119,6 @@ export default function ProductCarousel() {
                   src={product.image} 
                   alt={product.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               
