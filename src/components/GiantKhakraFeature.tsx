@@ -1,5 +1,3 @@
-import khakhraImage from '../assets/Prod_images/Khakhra.jpg';
-
 export default function GiantKhakraFeature() {
   return (
     <section className="relative bg-saffron py-24 md:py-32 overflow-hidden grain-overlay z-10">
@@ -13,9 +11,10 @@ export default function GiantKhakraFeature() {
               clipPath: "polygon(0 0, 95% 0, 100% 5%, 98% 10%, 100% 15%, 95% 20%, 100% 25%, 98% 30%, 100% 35%, 95% 40%, 100% 45%, 98% 50%, 100% 55%, 95% 60%, 100% 65%, 98% 70%, 100% 75%, 95% 80%, 100% 85%, 98% 90%, 100% 95%, 95% 100%, 0 100%)"
             }}>
               <img 
-                src={khakhraImage} 
+                src="https://picsum.photos/seed/giant-khakra/800/1200" 
                 alt="Giant Khakra" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

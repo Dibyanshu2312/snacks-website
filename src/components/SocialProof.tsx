@@ -1,12 +1,5 @@
 import { Star, Instagram } from 'lucide-react';
 
-import masalaKhakhraImg from '../assets/Prod_images/masala-khakhra.jpg';
-import methiKhakhraImg from '../assets/Prod_images/methi-khakhra.jpg';
-import kormaKhakhraImg from '../assets/Prod_images/korma-khakhra.jpg';
-import multiGrainImg from '../assets/Prod_images/multi-grain.jpg';
-import gondLaddooImg from '../assets/Prod_images/gond-laddoo.webp';
-import uradGondLaddooImg from '../assets/Prod_images/urad-gond-laddoo.jpg';
-
 const reviews = [
   {
     quote: "The size of these khakras is insane! And the taste takes me right back to my childhood in Gujarat. Absolutely love the Methi one.",
@@ -37,12 +30,12 @@ const reviews = [
 ];
 
 const instaImages = [
-  masalaKhakhraImg,
-  methiKhakhraImg,
-  kormaKhakhraImg,
-  multiGrainImg,
-  gondLaddooImg,
-  uradGondLaddooImg,
+  "https://picsum.photos/seed/insta1/300/300",
+  "https://picsum.photos/seed/insta2/300/300",
+  "https://picsum.photos/seed/insta3/300/300",
+  "https://picsum.photos/seed/insta4/300/300",
+  "https://picsum.photos/seed/insta5/300/300",
+  "https://picsum.photos/seed/insta6/300/300"
 ];
 
 export default function SocialProof() {
@@ -90,7 +83,7 @@ export default function SocialProof() {
         <div className="flex gap-4 w-max animate-marquee-left">
           {[...instaImages, ...instaImages, ...instaImages, ...instaImages].map((img, i) => (
             <div key={i} className="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-xl border-4 border-cream/10 shrink-0 group relative">
-              <img src={img} alt="Instagram post" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src={img} alt="Instagram post" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-night/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
                 <Instagram size={32} className="text-cream" />
               </div>

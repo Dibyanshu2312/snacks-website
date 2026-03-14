@@ -1,5 +1,3 @@
-import gondLaddooImage from '../assets/Prod_images/gond-laddoo.webp';
-
 export default function LadduLoveFeature() {
   return (
     <section className="relative bg-berry py-24 md:py-32 overflow-hidden grain-overlay z-30">
@@ -42,9 +40,10 @@ export default function LadduLoveFeature() {
           <div className="relative w-full h-full transform -rotate-2">
             <div className="absolute inset-0 overflow-visible rounded-[3rem] shadow-2xl bg-cream/5 backdrop-blur-sm border border-cream/10 p-4 transform translate-y-[-40px]">
               <img 
-                src={gondLaddooImage} 
+                src="https://picsum.photos/seed/laddu/800/1200" 
                 alt="Celebration Laddus" 
                 className="w-full h-[110%] object-cover rounded-[2.5rem] transform -translate-y-[5%]"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
